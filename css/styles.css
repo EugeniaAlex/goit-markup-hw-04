@@ -311,8 +311,8 @@ a.active {
 
 .ourteam-social-link:hover,
 .ourteam-social-link:focus,
-.ourteam-social-icon:hover,
-.ourteam-social-icon:focus {
+.ourteam-social-link:hover use,
+.ourteam-social-link:focus use {
   background-color: var(--accent-color);
   fill: var(--darkbg-text-color);
 }
@@ -341,8 +341,8 @@ a.active {
 
 .clients-link:hover,
 .clients-link:focus,
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:hover use,
+.clients-link:focus use {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -390,6 +390,16 @@ a.active {
   margin-bottom: 30px;
 }
 
+.works-link {
+  display: block;
+}
+
+.works-link:hover,
+.works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-text {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
@@ -415,11 +425,6 @@ a.active {
 }
 
 /*------------footer-styles--------*/
-
-/* .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-} */
 
 .footer-flexcont {
   display: flex;
